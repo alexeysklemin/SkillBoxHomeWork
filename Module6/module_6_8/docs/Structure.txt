@@ -1,0 +1,25 @@
+C:\SkillBox\Module6\module_6_8
+│
+├── main.cpp                         ← Точка входа
+├── CMakeLists.txt                   ← cmake file
+│
+├── engine/                           ← Логика и данные (Domain + Data)
+│   ├── user_logic.h                  ← Базовый класс (Интерфейс отгадывающего)
+│   ├── computer.h/cpp                ← Компьютер (Алгоритм угадывания + Генератор)
+│   ├── human.h/cpp                   ← Человек (Ввод данных)
+│   └── jsondatamanager.h/cpp         ← Работа с JSON (Сохранение/Загрузка)
+│
+├── UI/                               ← Presentation
+│   ├── mainwindow.h/cpp              ← Главное окно-контейнер
+│   ├── computergameview.h/cpp        ← Виджет: "Компьютер угадывает"
+│   └── humangameview.h/cpp           ← Виджет: "Человек угадывает"
+│
+├── tests/                            ← Тесты
+│   ├── test_computer.cpp
+│   ├── test_human.cpp
+│   ├── test_gamesession.cpp
+│   └── test_jsondatamanager.cpp
+│
+└── docs/                             ← Документация
+    └── README.md                     ← Инструкция пользователя
+    └── Structure.txt                 ← Структура приложения
